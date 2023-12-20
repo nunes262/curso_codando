@@ -1,0 +1,16 @@
+# Service, cria uma base doq tera que fazer, setando a entrada e saida do fluxo
+class Animal:
+    def fazer_barulho(self, vezes: int) -> bool:
+        raise NotImplementedError()
+
+# Adapter: e uma classe filho do Service, ou seja, ira herdar todo o comportamento(saida e entrada) ira criar um comportamento, cada service pode ter mais de um adapter
+class Pato(Animal):
+    def fazer_barulho(self, vezes: int) -> bool:
+        for _ in range(0, vezes):
+            print("Miau")
+# usecase: ira chamar a classe pai tendo a entrada e saida bem definida para o funcionamento.
+def fazer_barulho_interface(animal: Animal, vezes: int):
+    animal.fazer_barulho(vezes)
+
+animal = Pato()
+fazer_barulho_interface(animal, 10)

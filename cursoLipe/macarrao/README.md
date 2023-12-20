@@ -1,0 +1,13 @@
+Burocracia de implementação:
+ - Definição do MVP
+ - Escolha de linguagem
+ - Regra de negocio
+    -- Blocos
+    -- Componentes
+    -- Funcionalidades
+ - Definição da arquitetura do projeto
+ - Projeto
+    -- Project manager
+    -- Modularização
+    -- Automatização de comandos
+ - Desing de codigo
